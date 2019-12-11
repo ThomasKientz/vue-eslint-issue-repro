@@ -1,24 +1,15 @@
-# eslint
+# Minimal reproduction project issue
 
-## Project setup
-```
-npm install
-```
+## Issue :
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Eslint returns "errors" instead of "warnings" for vue's rules.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Steps to reproduce
 
-### Lints and fixes files
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Eg "vue/no-unused-components" should return a warning instead of an error :
+
+> error: The "HelloWorld" component has been registered but not used (vue/no-unused-components) at src/App.vue:14:5:
